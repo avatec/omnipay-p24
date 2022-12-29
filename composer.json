@@ -1,7 +1,7 @@
 {
-  "name": "ticketswap/omnipay-przelewy24",
+  "name": "avatec/omnipay-p24",
   "type": "library",
-  "description": "Przelewy24 driver for the Omnipay payment processing library",
+  "description": "Przelewy24 driver for the Omnipay payment processing library. Forked from ticketswap/omnipay-przelewy24",
   "keywords": [
     "przelewy24",
     "gateway",
@@ -11,12 +11,16 @@
     "payment",
     "transfer"
   ],
-  "homepage": "https://github.com/ticketswap/omnipay-przelewy24",
+  "homepage": "https://github.com/avatec/omnipay-p24",
   "license": "MIT",
   "authors": [
     {
       "name": "TicketSwap",
       "email": "info@ticketswap.com"
+    },
+    {
+      "name": "Grzegorz Miskiewicz",
+      "email": "avatecpl@gmail.com"
     }
   ],
   "autoload": {
