@@ -15,7 +15,7 @@ For more information about the Przelewy24 API, take a look at the [manual](http:
 This gateway can be installed with [Composer](https://getcomposer.org/):
 
 ``` bash
-$ composer require ticketswap/omnipay-przelewy24
+$ composer require avatec/omnipay-p24
 ```
 
 ## Usage
