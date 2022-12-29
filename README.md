@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/TicketSwap/omnipay-przelewy24.svg?branch=master)](https://travis-ci.org/avatec/omnipay-p24)
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
-processing library for PHP 7.2+. This package implements Przelewy24 support for Omnipay.
+processing library for PHP 8.0+. This package implements Przelewy24 support for Omnipay.
 
 For more information about the Przelewy24 API, take a look at the [manual](http://www.przelewy24.pl/files/cms/13/przelewy24_specification.pdf)
 
