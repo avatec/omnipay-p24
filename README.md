@@ -76,7 +76,7 @@ $gateway->initialize([
     
 ```
 
-For a list of all the supported values for 'Channel' you can read the [przelewy24 documentation](http://www.przelewy24.pl/eng/storage/app/media/pobierz/Instalacja/przelewy24_specification.pdf)
+For a list of all the supported values for 'Channel' you can read the [przelewy24 documentation](https://developers.przelewy24.pl/index.php?en)
 
 ## Support
 
