@@ -24,7 +24,7 @@ The following gateways are provided by this package:
 
  * Przelewy24
 
-## Example
+## Example - get payment link
 
 ```php
 
@@ -77,6 +77,43 @@ $gateway->initialize([
 ```
 
 For a list of all the supported values for 'Channel' you can read the [przelewy24 documentation](https://developers.przelewy24.pl/index.php?en)
+
+## Example - validate payment (notifyUrl)
+
+```php
+
+require_once  __DIR__ . '/vendor/autoload.php';
+
+use Omnipay\Omnipay;
+
+/** @var \Omnipay\Przelewy24\Gateway $gateway */
+$gateway = Omnipay::create('Przelewy24');
+
+$gateway->initialize([
+    'merchantId' => 'YOUR MERCHANT ID HERE',
+    'posId'      => 'YOUR POS ID HERE',
+    'crc'        => 'YOUR CRC KEY HERE',
+    'testMode'   => true,
+]);
+
+$params = array(
+    'sessionId' => 2327398739,
+    'amount' => 12.34,
+    'transactionId' => 12345678,
+    'method' => 63,
+    'currency' => 'PLN',
+    'statement' => 'p24-H00-B00-J00',
+    'sign' => 'sign hashed'
+);
+
+$response = $gateway->completePurchase($params)->send();
+
+if ($response->isSuccessful()) {
+    echo 'Success';
+} else {
+    echo 'Failed';
+}
+```
 
 ## Support
 
